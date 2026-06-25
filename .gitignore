@@ -12,4 +12,7 @@ config/dashscope.env
 codeql/*
 dataset/*
 logs/*
+cache/
+scripts/__pycache__/
 .*
+!.gitignore

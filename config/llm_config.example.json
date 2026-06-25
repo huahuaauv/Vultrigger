@@ -1,0 +1,12 @@
+{
+  "provider": "openai",
+  "api_base": "https://api.openai.com/v1",
+  "api_key": "YOUR_OPENAI_API_KEY",
+  "prompt_model": "gpt-4o-mini",
+  "generator_model": "gpt-4o-mini",
+  "debugger_model": "gpt-4o-mini",
+  "verifier_model": "gpt-4o-mini",
+  "request_timeout_sec": 120,
+  "max_tokens": 8192,
+  "temperature": 0.2
+}

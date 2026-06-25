@@ -1,0 +1,41 @@
+cases:
+  - case_id: CVE-YYYY-NNNNN
+    cve_id: CVE-YYYY-NNNNN
+    ecosystem: maven
+    language: java
+    description: "Describe the vulnerability context"
+    upstream:
+      name: example-upstream
+      repo: "https://github.com/example/upstream"
+      checkout: "v1.2.3"
+      checkout_type: "tag"
+      package:
+        group_id: "org.example"
+        artifact_id: "example-lib"
+        affected_version: "1.2.3"
+        fixed_version: "1.2.4"
+      path: "upstream/example-upstream"
+      build_system: "maven"
+    poc:
+      repo: "https://github.com/example/cve-poc"
+      checkout: "main"
+      checkout_type: "branch"
+      expected_files: []
+    downstreams:
+      - name: example-downstream
+        repo: "https://github.com/example/downstream"
+        checkout: "main"
+        checkout_type: "branch"
+        path: "downstream/example-downstream"
+        build_system: "maven"
+        dependency_hint:
+          group_id: "org.example"
+          artifact_id: "example-lib"
+        bridge_hints: []
+    vulnerable_apis:
+      - class_name: ""
+        method_name: ""
+        signature: ""
+        parameter_index: null
+        trigger_condition: ""
+    notes: []

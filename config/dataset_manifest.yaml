@@ -1,0 +1,70 @@
+cases:
+  - case_id: CVE-2020-13956
+    cve_id: CVE-2020-13956
+    ecosystem: maven
+    language: java
+    description: "Apache HttpClient malformed URI authority parsing bug leading to wrong target host selection"
+    upstream:
+      name: httpcomponents-client
+      repo: "https://github.com/apache/httpcomponents-client"
+      checkout: "rel/v4.5.12"
+      checkout_type: "tag"
+      path: "upstream/httpcomponents-client"
+      build_system: "maven"
+      package:
+        group_id: "org.apache.httpcomponents"
+        artifact_id: "httpclient"
+        affected_version: "4.5.11"
+        fixed_version: "4.5.13"
+    downstreams:
+      - name: "snowflake-jdbc-vuln-4.5.11"
+        enabled: true
+        status: "confirmed"
+        repo: "https://github.com/snowflakedb/snowflake-jdbc"
+        checkout: "7fc2a27d3a13335ef88dc65254c3dcca5e7b358c"
+        checkout_type: "commit"
+        path: "downstream/snowflake-jdbc-vuln-4.5.11"
+        build_system: "maven"
+        dependency_hint:
+          group_id: "org.apache.httpcomponents"
+          artifact_id: "httpclient"
+          version: "4.5.11"
+        build_hint:
+          command: "mvn -DskipTests -Dspotbugs.skip=true -Dcheckstyle.skip=true -Dlicense.skip=true -Dmaven.javadoc.skip=true -Djacoco.skip=true -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean test-compile"
+        bridge_hints:
+          - "org.apache.http.client.utils.URIUtils.extractHost(java.net.URI)"
+          - "org.apache.http.client.methods.HttpGet.<init>(java.net.URI)"
+          - "org.apache.http.impl.client.CloseableHttpClient.execute"
+      - name: "share"
+        enabled: false
+        status: "candidate_needs_dependency_verification"
+        repo: "https://github.com/Alfresco/share"
+        checkout: "master"
+        checkout_type: "branch"
+        path: "downstream/share"
+        build_system: "maven"
+        dependency_hint:
+          group_id: "org.apache.httpcomponents"
+          artifact_id: "httpclient"
+        build_hint:
+          command: "mvn -DskipTests -Dspotbugs.skip=true -Dcheckstyle.skip=true -Dlicense.skip=true -Dmaven.javadoc.skip=true -Djacoco.skip=true -pl share-services,web-framework-commons,share-encryption -am clean test-compile"
+        bridge_hints:
+          - "org.apache.http.client.utils.URIUtils.extractHost(java.net.URI)"
+          - "org.apache.http.client.methods.HttpGet.<init>(java.net.URI)"
+          - "org.apache.http.impl.client.CloseableHttpClient.execute"
+    vulnerable_apis:
+      - class_name: "org.apache.http.client.utils.URIUtils"
+        method_name: "extractHost"
+        signature: "org.apache.http.client.utils.URIUtils.extractHost(java.net.URI): org.apache.http.HttpHost"
+        parameter_index: 0
+        trigger_condition: "Malformed authority URI can lead to wrong target host selection."
+    poc:
+      type: "inline"
+      path: "poc/inline"
+      payloads:
+        - "http://user@apache.org:80@google.com/"
+      expected_vulnerable_result: "apache.org"
+      expected_patched_behavior: "reject URI or avoid selecting apache.org as target host"
+    notes:
+      - "Only dataset download and metadata generation are enabled in this stage."
+      - "Default downstream is snowflake-jdbc-vuln-4.5.11; share is disabled by default."
