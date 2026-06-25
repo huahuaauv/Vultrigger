@@ -1,0 +1,6 @@
+PyYAML>=6.0
+requests>=2.31.0
+tqdm>=4.66.0
+# Third phase v2 (LLM mode): pip install openai python-dotenv
+openai>=1.0.0
+python-dotenv>=1.0.0

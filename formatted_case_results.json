@@ -1,0 +1,410 @@
+[
+  {
+    "upstream": "Apache PDFBox",
+    "downstream": "PDF-Signature-Check",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Apache PDFBox",
+    "downstream": "siga",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "Jsoup",
+    "downstream": "reader",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Jsoup",
+    "downstream": "reader-legado",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Apache Log4j2",
+    "downstream": "apache-solr",
+    "success": false,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Apache Log4j2",
+    "downstream": "apache-jmeter",
+    "success": false,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "SnakeYAML",
+    "downstream": "swagger-core",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "SnakeYAML",
+    "downstream": "apache-submarine",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Json-smart",
+    "downstream": "apache-jmeter",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "Json-smart",
+    "downstream": "botbuilder-java",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "Apache Commons Compress",
+    "downstream": "apache-tika",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Apache Commons Compress",
+    "downstream": "smart-data-lake",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "Apache Commons Compress",
+    "downstream": "apache-tika",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Apache Commons Compress",
+    "downstream": "geoclimate",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "apache-jmeter",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "WebGoat",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "Spring Cloud Function",
+    "downstream": "spring-cloud-function-sample-pojo",
+    "success": false,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Spring Cloud Function",
+    "downstream": "spring-cloud-function-sample-routing",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Apache Commons Configuration",
+    "downstream": "okta-aws-cli-assume-role",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "Apache Commons Configuration",
+    "downstream": "DiffSearch",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Apache Commons Text",
+    "downstream": "cve-2022-42889-text4shell-docker",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "Apache Commons Text",
+    "downstream": "ClickCyber-cve-2022-42889",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "Apache HttpClient",
+    "downstream": "snowflake-jdbc",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Apache HttpClient",
+    "downstream": "apache-directory-studio",
+    "success": false,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "Apache Commons FileUpload",
+    "downstream": "apache-struts2-showcase",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "Apache Commons FileUpload",
+    "downstream": "Jenkins core",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Apache Struts2",
+    "downstream": "struts2-showcase",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Apache Struts2",
+    "downstream": "struts2-rest-showcase",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Apache Struts2 REST plugin",
+    "downstream": "struts2-rest-showcase",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "Apache Struts2 REST plugin",
+    "downstream": "struts2-rest-plugin",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Jackson Databind",
+    "downstream": "apache-druid",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Apache Shiro",
+    "downstream": "shiro-root-web-sample",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "Apache Shiro",
+    "downstream": "SHIRO-550-vulnerable-demo",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "Apache Shiro",
+    "downstream": "shiro-spring-boot-web-starter-sample",
+    "success": false,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Apache Shiro",
+    "downstream": "jeesite4",
+    "success": false,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "dom4j",
+    "downstream": "jeecg-boot",
+    "success": false,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Jettison",
+    "downstream": "apache-cxf-jaxrs-json-provider-sample",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Jettison",
+    "downstream": "atlassian-jira-jettison-dependent-stack",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "hazelcast-eureka",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "geoclimate",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "apache-jmeter",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "WebGoat",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "XStream",
+    "downstream": "apache-jmeter",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "PyYAML",
+    "downstream": "apache-airflow",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "PyYAML",
+    "downstream": "ansible-role-knative",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "Requests",
+    "downstream": "ckan",
+    "success": true,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "Requests",
+    "downstream": "odoo",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "Requests",
+    "downstream": "AzurLaneAutoScript",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "urllib3",
+    "downstream": "slurm-gcp",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "urllib3",
+    "downstream": "ckan",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "urllib3",
+    "downstream": "AzurLaneAutoScript",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Werkzeug",
+    "downstream": "ckan",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Werkzeug",
+    "downstream": "apache-superset",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "sqlparse",
+    "downstream": "ckan",
+    "success": true,
+    "generation_rounds": 3
+  },
+  {
+    "upstream": "sqlparse",
+    "downstream": "apache-superset",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "aiohttp",
+    "downstream": "apache-airflow",
+    "success": false,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "aiohttp",
+    "downstream": "apache-superset",
+    "success": false,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "cryptography",
+    "downstream": "cowrie",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "cryptography",
+    "downstream": "apache-airflow",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Twisted",
+    "downstream": "cowrie",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "Tornado",
+    "downstream": "apache-airflow",
+    "success": true,
+    "generation_rounds": 2
+  },
+  {
+    "upstream": "Tornado",
+    "downstream": "AzurLaneAutoScript",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Jinja2",
+    "downstream": "ckan",
+    "success": true,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "Jinja2",
+    "downstream": "odoo",
+    "success": true,
+    "generation_rounds": 6
+  },
+  {
+    "upstream": "Pillow",
+    "downstream": "odoo",
+    "success": true,
+    "generation_rounds": 5
+  },
+  {
+    "upstream": "Pillow",
+    "downstream": "OCA-OCB",
+    "success": false,
+    "generation_rounds": 1
+  },
+  {
+    "upstream": "lxml",
+    "downstream": "odoo",
+    "success": false,
+    "generation_rounds": 4
+  },
+  {
+    "upstream": "lxml",
+    "downstream": "OCA-OCB",
+    "success": true,
+    "generation_rounds": 5
+  }
+]

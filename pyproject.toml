@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vulbridge-recovery"
+version = "0.1.0"
+description = "Recovered dataset bootstrap for upstream/downstream vulnerability reachability experiments"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0",
+  "requests>=2.31.0",
+  "rich>=13.7.0",
+]
