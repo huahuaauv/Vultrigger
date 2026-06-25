@@ -1,0 +1,15 @@
+# Local toolchain (large; regenerate with scripts or manual download)
+tools/jdk8/
+tools/apache-maven-*/
+tools/_extract_jdk/
+*.zip
+
+# LLM secrets (use *.example.json / *.env.example in repo)
+config/llm_config.json
+config/qwen.env
+config/dashscope.env
+.env
+codeql/*
+dataset/*
+logs/*
+.*
