@@ -10,9 +10,10 @@ config/qwen.env
 config/dashscope.env
 .env
 codeql/*
-dataset/*
 logs/*
 cache/
+dataset/.cache/
 scripts/__pycache__/
 .*
 !.gitignore
+!.gitkeep
